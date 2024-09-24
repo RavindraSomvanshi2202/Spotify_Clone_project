@@ -1,0 +1,682 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+                                                            /* NavBar Section */
+
+.navbar {
+    display: flex;
+    background: black;
+    align-items: center;
+    height: 60px;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    height: 60px;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.home-search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(69, 69, 69);
+    border-radius: 50%;
+}
+
+.home:hover {
+    transform: scale(1.1);
+}
+
+.home a i {
+    color: rgb(247, 244, 244);
+    padding: 15px 15px;
+    font-size: 18px;
+}
+
+.searchbar {
+    margin-left: 15px;
+    background: rgb(69, 69, 69);
+    padding: 13px;
+    width: 550px;
+    border-radius: 30px;
+}
+
+.searchbar i {
+    font-size: 20px;
+    position: relative;
+    top: 15;
+}
+
+
+.searchbar input{
+    color: rgb(242, 240, 240);
+    background: transparent;
+    width: 80%;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.auth-btn {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+
+.auth-btn span a {
+    text-decoration: none;
+    color: rgb(173, 170, 170);
+    margin-right: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.auth-btn span a:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+.auth-btn button {
+    padding: 15px 25px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.auth-btn button:hover {
+    transform: scale(1.1);
+}
+
+                                                        /* SideBar Section */
+
+.side-bar {
+    width: 350px;
+    background: rgb(18, 18, 18);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin-top: 62px;
+    border-radius: 12px;
+    margin-left: 5px;
+    margin-bottom: 85px;
+}
+
+.side-bar .sidebar-nav ul .box {
+    list-style: none;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.book-icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.side-bar .sidebar-nav ul li span {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.plus-icon {
+    text-decoration: none;
+    color: white;
+    margin-left: 130px;
+    padding: 5px;
+}
+
+.plus-icon:hover {
+    background: rgb(67, 66, 66);
+    border-radius: 50%;
+}
+
+                                                            /* ScrollBar Section */
+
+.scroll-bar {
+    background:transparent;  
+    margin-top:30px;
+    border-radius: 5px;
+    margin-left: 0px;
+    height: 250px;
+    overflow-y: auto;
+}
+
+.scroll-bar::-webkit-scrollbar{
+    background: transparent;
+}
+
+.scroll-bar::-webkit-scrollbar-thumb{
+    background: transparent;
+    width: 10px;
+    
+}
+
+.scroll-bar:hover::-webkit-scrollbar-thumb{
+    background: rgb(160, 157, 157);
+    width: 10px;
+}
+
+.create-playlist {
+    background: rgb(47, 46, 46);
+    padding: 25px 35px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.create-playlist h4 {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+}
+
+.create-playlist p {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(188, 183, 183);
+    margin-bottom: 8px;
+}
+
+.create-playlist button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    font-weight:600 ;
+}
+
+.create-playlist button:hover{
+    transform: scale(1.1);
+}
+
+.browse-podcast {
+    background: rgb(47, 46, 46);
+    padding: 25px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+
+.browse-podcast h4 {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+}
+
+.browse-podcast p {
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(188, 183, 183);
+    margin-bottom: 8px;
+}
+
+.browse-podcast button {
+    margin-top: 10px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: none;
+    font-weight:600 ;
+}
+
+.browse-podcast button:hover{
+    transform: scale(1.1);
+}
+
+.privacy {
+    margin-top: 35px;
+}
+
+.privacy ul li{
+    margin-bottom: 5px;
+}
+
+.privacy ul li a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: rgb(195, 192, 192);
+    gap: 2rem;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.privacy ul li .link {
+    color: white;
+}
+
+.privacy ul li .link:hover {
+    text-decoration: underline;
+}
+
+.eng-btn {
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.eng-btn button{
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid white;
+    font-weight: 600;
+    color: white;
+    background: transparent;
+}
+
+.eng-btn button i{
+    margin-right: 5px;
+    color: white;
+}
+
+.album-section {
+    width: 75%;
+    background: rgb(18, 18, 18);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin-top: 62px;
+    border-radius: 12px;
+    margin-left: 365px;
+    margin-right: 25px;
+    margin-bottom: 85px;
+    overflow-y: auto;
+}
+.album-section::-webkit-scrollbar {
+    background: transparent;
+}
+
+.album-section::-webkit-scrollbar-thumb {
+    background: grey;
+}
+
+                                                            /* Popular Artist Section */
+
+.album-section .popular-artist-section-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular-artist-section-1 a {
+    margin-top: 20px;
+    margin-left: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+.popular-artist-section-1 a h3 {
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.popular-artist-section-1 a h3:hover {
+    text-decoration: underline;
+}
+
+.popular-artist-section-1 a span {
+    margin-right: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.popular-artist-section-1 a span:hover {
+    text-decoration: underline;
+}
+
+.card-1 {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-evenly;
+    margin-top: 14px;
+}
+
+.card-1 .item-1 {
+    width: 190px;
+    min-width: 170px;
+    cursor: pointer;
+    padding: 15px 25px;
+    border-radius: 6px;
+}
+
+.card-1 .item-1:hover {
+    background-color: #3d3c3c;
+}
+
+.card-1 .item-1 img {
+    width: 140px;
+    height: 140px;
+    border-radius: 80%;
+    margin-bottom: 10px;
+}
+
+.play-btn {
+    position: relative;
+}
+
+.play-btn i {
+    position: absolute;
+    background: #1db954;
+    border-radius: 50%;
+    padding: 14px;
+    right: 14px;
+    top: -70px;
+    color: black;
+    opacity: 0;
+}
+
+.card-1 .item-1:hover .play-btn i {
+    opacity: 1;
+}
+
+.card-1 .item-1:hover .play-btn i:hover {
+    transform: scale(1.1);
+}
+
+.item-1 h4 {
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Helvetica Neue, helvetica, arial, Hiragino Kaku Gothic ProN, Meiryo, MS Gothic;
+}
+
+.item-1 h4:hover {
+   text-decoration: underline;
+}
+
+.item-1 p {
+    font-size: 11px;
+    font-weight: 500;
+    color: rgb(192, 185, 185);
+    font-family: Helvetica Neue, helvetica, arial, Hiragino Kaku Gothic ProN, Meiryo, MS Gothic;
+}
+
+                                                        /*  Popular Album Section  */
+
+.album-section .popular-album-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular-album-section a {
+    margin-top: 20px;
+    margin-left: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+.popular-album-section a h3 {
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.popular-album-section a h3:hover {
+    text-decoration: underline;
+}
+
+.popular-album-section a span {
+    margin-right: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.popular-album-section a span:hover {
+    text-decoration: underline;
+}
+
+.card {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-evenly;
+    margin-top: 14px;
+}
+
+.card .item {
+    width: 190px;
+    min-width: 170px;
+    cursor: pointer;
+    padding: 15px 25px;
+    border-radius: 6px;
+}
+
+.card .item:hover {
+    background-color: #3d3c3c;
+}
+
+.card .item img {
+    width: 130px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.play-btn {
+    position: relative;
+}
+
+.play-btn i {
+    position: absolute;
+    background: #1db954;
+    border-radius: 50%;
+    padding: 14px;
+    right: 14px;
+    top: -70px;
+    color: black;
+    opacity: 0;
+}
+
+.card .item:hover .play-btn i {
+    opacity: 1;
+}
+
+.card .item:hover .play-btn i:hover {
+    transform: scale(1.1);
+}
+
+.item h4 {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-family: Helvetica Neue, helvetica, arial, Hiragino Kaku Gothic ProN, Meiryo, MS Gothic;
+}
+
+.item h4:hover {
+    text-decoration: underline;
+}
+
+.item p {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(192, 185, 185);
+    font-family: Helvetica Neue, helvetica, arial, Hiragino Kaku Gothic ProN, Meiryo, MS Gothic;
+}
+
+.item p:hover {
+    text-decoration: underline;
+}
+
+                                                        /* Popular Radio Section */
+
+.album-section .popular-radio-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popular-radio-section a {
+    margin-top: 20px;
+    margin-left: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+.popular-radio-section a h3 {
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.popular-radio-section a h3:hover {
+    text-decoration: underline;
+}
+
+.popular-radio-section a span {
+    margin-right: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.popular-radio-section a span:hover {
+    text-decoration: underline;
+}
+
+                                                            /* Footer Section */
+
+.footer-section {
+    padding: 20px 20px;
+}
+
+.column {
+    display: flex;
+    gap: 60px;
+    margin: 10px 15px;
+}
+
+.col-links ul h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.col-links ul li {
+    list-style: none;
+    margin: 6px 0;
+    
+}
+
+.col-links ul li a {
+    text-decoration: none;
+    color: #d1cdcd;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+}
+
+.col-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.col-icons {
+    margin-left: 180px;
+}
+
+.col-icons i:hover {
+    background: white;
+}
+
+.col-icons i {
+    padding: 10px;
+    background: #989393;
+    color: black;
+    font-size: 18px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+hr {
+    margin-top: 30px;
+    border: 1px solid rgb(67, 67, 67);
+}
+
+                                                                /* Copyright Section */
+
+.copyright {
+    margin-top: 40px;
+    color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+
+                                                                /* Preview Section */
+
+.preview {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 16px 0;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    margin-left: 7px;
+    border-radius: 6px;
+}
+
+.preview .text h4 a {
+    margin-left: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.preview .text p a{
+    margin-left: 16px;
+    color: white;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:14px;
+}
+
+.preview .button button {
+   padding: 12px 30px;
+   border: 0;
+   outline: 0;
+   border-radius: 20px;
+   margin-right: 18px;
+   font-size: 16px;
+   font-weight: bold;
+}
+
+.preview .button button:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
